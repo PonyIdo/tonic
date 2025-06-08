@@ -4,10 +4,14 @@ import yaml
 from faker import Faker
 from requests.auth import HTTPBasicAuth
 import os
+from dotenv import load_dotenv
+
 # Load config
 with open("config.yaml") as f:
     config = yaml.safe_load(f)
 
+
+load_dotenv()
 JIRA_EMAIL = os.getenv("JIRA_EMAIL")
 JIRA_TOKEN = os.getenv("JIRA_TOKEN")
 JIRA_DOMAIN = os.getenv("JIRA_DOMAIN")
