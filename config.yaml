@@ -1,0 +1,12 @@
+servers:
+  - srv-app01
+  - srv-db02
+  - srv-cache03
+  - srv-auth04
+  - srv-web05
+
+priority_distribution:
+  Highest: 5
+  High: 10
+  Low: 30
+  Lowest: 55
